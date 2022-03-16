@@ -1,0 +1,92 @@
+
+/* Google Font Family */
+/* font-family: 'Fredoka', sans-serif;
+
+font-family: 'League Spartan', sans-serif;
+
+font-family: 'Poppins', sans-serif; */
+/* Google Font Family */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 500;
+}
+ul, ol {
+    list-style: none;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+img {
+    vertical-align: middle;
+}
+
+/* Common CSS End */
+
+
+.box {
+    height: 200px;
+    width: 200px;
+    background: red;
+    /* margin: 3px; */
+    /* float: left; */
+}
+.main_box {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.header {
+    background: #f1f1f1;
+}
+.gap_area {
+    max-width: 80%;
+    margin: 0 auto;
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu {
+    display: flex;
+}
+.menu li a {
+    padding: 20px 15px;
+    display: block;
+}
+.menu li {
+    position: relative;
+}
+.menu li a:hover {
+    background: #f00;
+    color: #fff;
+}
+
+.drop_menu {
+    display: none;
+    background: #f1f1f1;
+    position: absolute;
+}
+.menu li:hover .drop_menu {
+    display: block;
+}
+.drop_menu li {
+    position: relative;
+}
+.sub_drop {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 100%;
+}
+.drop_menu li:hover .sub_drop {
+    display: block;
+    background: #f1f1f1;
+}
